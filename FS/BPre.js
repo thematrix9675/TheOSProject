@@ -1,0 +1,9 @@
+if(!FS.exists("B:/reset.dll")){
+	FS.setFileMat("B",[["","","",""]]);
+	FS.setFolderMat("B",[["","",""]]);
+	FS.newFolder("B:/OS/");
+	FS.newFile("B:/systems.csv");
+	FS.newFile("B:/os.sys");
+	FS.setFileMat("T",[["","","",""]]);
+	FS.setFolderMat("T",[["","",""]]);
+}
