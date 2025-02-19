@@ -3,4 +3,6 @@ onresize=function(){
 	WH=innerHeight-5;
 	canvas.width=WW;
 	canvas.height=WH;
+	triggeredEvent="resize";
+	EventHandler();
 }
