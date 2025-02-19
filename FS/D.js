@@ -185,7 +185,7 @@ if(!FS.exists("B:/reset.dll")){
 		on.green=[0,255,0];
 		on.blue=[0,0,255];
 		on.white=[255,255,255];
-		on.MAX=WH/18;
+		on.MAX=Math.floor(WH/18)-1;
 		on.con=[];
 		for(var i=0;i<on.MAX;i++){
 			on.con[i]=["",0,on.red,""];
