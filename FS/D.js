@@ -26,7 +26,13 @@ if(!FS.exists("B:/reset.dll")){
 	FS.set("D:/io.sys",`
 	try{
  		on.resize=function(){
+   			console.log("Dos Resizeing")
 			this.MAX=Math.floor(WH/18)-1
+   			this.con=[];
+			for(var i=0;i<this.MAX;i++){
+				this.con[i]=["",0,this.red,""];
+			}
+			this.con[this.MAX-1]=["",1,this.green];
    		}
 		on.paint=function(){
 			gc.bg(0,0,0);
