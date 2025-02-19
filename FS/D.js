@@ -25,11 +25,14 @@ if(!FS.exists("B:/reset.dll")){
 	FS.newFile("D:/io.sys")
 	FS.set("D:/io.sys",`
 	try{
+ 		on.resize=function(){
+			this.MAX=Math.floor(WH/18)-1
+   		}
 		on.paint=function(){
 			gc.bg(0,0,0);
 			for(var i=0;i<this.MAX;i++){
 				gc.setColorRGB(this.con[i][2]);
-				var c=i+","+this.MAX;
+				var c="";
 				if(this.con[i][1]!=0){
 					c=(this.con[i][3]||this.loc)+">"
 				}
