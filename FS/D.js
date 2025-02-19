@@ -29,7 +29,7 @@ if(!FS.exists("B:/reset.dll")){
 			gc.bg(0,0,0);
 			for(var i=0;i<this.MAX;i++){
 				gc.setColorRGB(this.con[i][2]);
-				var c="";
+				var c=i+","+this.MAX;
 				if(this.con[i][1]!=0){
 					c=(this.con[i][3]||this.loc)+">"
 				}
